@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вертикальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="vertical.css">
+</head>
+<body>
+<nav class="sidenav">
+    <ul class="menu">
+        <li class="menu-item active"><a class="menu-link" href="#"><span class="material-icons">home</span><span>Головна</span></a></li>
+        <li class="menu-item">
+            <a class="menu-link" href="#"><span class="material-icons">school</span><span>Курси</span></a>
+            <ul class="submenu">
+                <li><a href="#">HTML</a></li>
+                <li class="has-sub">
+                    <a href="#">CSS</a>
+                    <ul class="submenu">
+                        <li><a href="#">Селектори</a></li>
+                        <li><a href="#">Позиціонування</a></li>
+                        <li><a href="#">Псевдокласи</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#"><span class="material-icons">menu_book</span><span>Матеріали</span></a>
+            <ul class="submenu">
+                <li><a href="#">Лекції</a></li>
+                <li class="has-sub">
+                    <a href="#">Лабораторні</a>
+                    <ul class="submenu">
+                        <li><a href="#">Лаб. 5</a></li>
+                        <li><a href="#">Лаб. 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="#"><span class="material-icons">mail</span><span>Пошта</span></a></li>
+        <li class="menu-item"><a class="menu-link" href="#"><span class="material-icons">settings</span><span>Налаштування</span></a></li>
+    </ul>
+</nav>
+<main class="content"><h1>Вертикальна навігація</h1><p>Панель займає всю висоту вікна (fixed, top:0; bottom:0), має три рівні вкладеності.</p></main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Горизонтальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="horizontal.css">
+</head>
+<body>
+<nav class="topnav">
+    <ul class="menu">
+        <li class="menu-item active"><a class="menu-link" href="#" title="Головна"><span class="material-icons">home</span></a></li>
+        <li class="menu-item">
+            <a class="menu-link" href="#" title="Курси"><span class="material-icons">school</span></a>
+            <ul class="submenu">
+                <li><a href="#">HTML</a></li>
+                <li class="has-sub">
+                    <a href="#">CSS</a>
+                    <ul class="submenu submenu--side">
+                        <li><a href="#">Селектори</a></li>
+                        <li><a href="#">Позиціонування</a></li>
+                        <li><a href="#">Flexbox</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#" title="Матеріали"><span class="material-icons">menu_book</span></a>
+            <ul class="submenu">
+                <li><a href="#">Лекції</a></li>
+                <li><a href="#">Лабораторні</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="#" title="Пошта"><span class="material-icons">mail</span></a></li>
+        <li class="menu-item menu-item--right">
+            <a class="menu-link" href="#" title="Профіль"><span class="material-icons">person</span></a>
+            <ul class="submenu submenu--right">
+                <li><a href="#">Налаштування</a></li>
+                <li><a href="#">Вийти</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main class="content">
+    <div class="sticky-bar">Липка панель (position: sticky)</div>
+    <p>Прокрутіть сторінку: верхня навігація зафіксована (fixed), а ця смуга «прилипає» під нею (sticky).</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p style="height:1200px">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</main>
+</body>
+</html>

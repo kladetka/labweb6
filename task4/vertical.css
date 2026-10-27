@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+
+.sidenav { position: fixed; top: 0; bottom: 0; left: 0; width: 220px; background: #263238; z-index: 100; }
+.menu, .submenu { margin: 0; padding: 0; list-style: none; }
+
+.menu-item, .has-sub { position: relative; }
+.menu-link { display: flex; align-items: center; gap: 12px; padding: 16px; color: #cfd8dc; text-decoration: none; }
+.menu-item:hover > .menu-link { background: #37474f; color: white; }
+.menu-item.active > .menu-link { background: #00897b; color: white; box-shadow: inset 4px 0 0 #ffd166; }
+
+.submenu { position: absolute; top: 0; left: 100%; min-width: 190px; background: #37474f;
+    visibility: hidden; opacity: 0; transition: opacity .2s; }
+.submenu a { display: block; padding: 14px 16px; color: #eceff1; text-decoration: none; }
+.submenu a:hover { background: #00897b; }
+.has-sub > a:after { content: '\25B8'; float: right; }
+
+.menu-item:hover > .submenu,
+.has-sub:hover > .submenu { visibility: visible; opacity: 1; }
+
+.content { margin-left: 240px; padding: 20px; }
